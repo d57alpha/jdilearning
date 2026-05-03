@@ -7,7 +7,8 @@
       //  Let the Parent (Education system) know the plugin is active
 
         // This is for plugin in iframe
-        window.parent.postMessage({ type: 'IFRAME_READY' }, 'http://localhost:5174/');
+        //window.parent.postMessage({ type: 'IFRAME_READY' }, 'http://localhost:5174/');
+        window.parent.postMessage({ type: 'IFRAME_READY' }, 'https://eduplatform-sigma-nine.vercel.app/');
 
         // This is for plugin in separate window
         //window.opener.postMessage({ type: 'IFRAME_READY' }, 'http://localhost:5174/');
@@ -22,10 +23,12 @@
 
     // This is for plugin in iframe
     function sendmsg1(){
-      window.parent.postMessage("Message 1 from plugin to parent", 'http://localhost:5174/');
+      //window.parent.postMessage("Message 1 from plugin to parent", 'http://localhost:5174/');
+      window.parent.postMessage("Message 1 from plugin to parent", 'https://eduplatform-sigma-nine.vercel.app/');
     }
     function sendmsg2(){
-      window.parent.postMessage("Message 2 from plugin to parent", 'http://localhost:5174/');
+      //window.parent.postMessage("Message 2 from plugin to parent", 'http://localhost:5174/');
+      window.parent.postMessage("Message 2 from plugin to parent", 'https://eduplatform-sigma-nine.vercel.app/');
     }
 
     // This is for plugin in separate window
