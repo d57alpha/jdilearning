@@ -2,8 +2,9 @@
 <!-- Svelte 5 style -->
  <svelte:window onmessage={(event) => {
      //if (event.origin !== 'http://localhost:5174') return;
+     console.log('plugin, try to get eduplatform message', event.origin, event.data);
      if (event.origin !== 'https://eduplatform-sigma-nine.vercel.app/') return;
-     console.log('plugin, get eduplatform message', event.data);
+     console.log('plugin, got eduplatform message', event.data);
  }} />
 
  <!--
