@@ -3,7 +3,7 @@
  <svelte:window onmessage={(event) => {
      //if (event.origin !== 'http://localhost:5174') return;
      console.log('plugin, try to get eduplatform message', event.origin, event.data);
-     if (event.origin !== 'https://eduplatform-sigma-nine.vercel.app/') return;
+     if (event.origin !== 'https://eduplatform-sigma-nine.vercel.app') return;
      console.log('plugin, got eduplatform message', event.data);
  }} />
 
@@ -28,20 +28,20 @@
         //localhost
       //window.parent.postMessage({ type: 'IFRAME_READY' }, 'http://localhost:5174/');
       // Vercel
-      window.parent.postMessage({ type: 'IFRAME_READY' }, 'https://eduplatform-sigma-nine.vercel.app/');
+      window.parent.postMessage({ type: 'IFRAME_READY' }, 'https://eduplatform-sigma-nine.vercel.app');
 	  });
 
     function sendmsg1(){
       // localhost
       //window.parent.postMessage("Message 1 from plugin to parent", 'http://localhost:5174/');
       // Vercel
-      window.parent.postMessage("Message 1 from plugin to parent", 'https://eduplatform-sigma-nine.vercel.app/');
+      window.parent.postMessage("Message 1 from plugin to parent", 'https://eduplatform-sigma-nine.vercel.app');
     }
     function sendmsg2(){
       // localhost
       //window.parent.postMessage("Message 2 from plugin to parent", 'http://localhost:5174/');
       // Vercel
-      window.parent.postMessage("Message 2 from plugin to parent", 'https://eduplatform-sigma-nine.vercel.app/');
+      window.parent.postMessage("Message 2 from plugin to parent", 'https://eduplatform-sigma-nine.vercel.app');
     }
 
 </script>
