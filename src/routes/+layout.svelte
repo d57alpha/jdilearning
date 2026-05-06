@@ -6,7 +6,7 @@
   //  this section sets the origins for communication between
   //  parent (education platform) and iframe (jdilearning)
   //  for localhost (development) and production (Vercel)
-
+  
     import { setContext } from 'svelte';
     //  localhost development
     //setContext("eduplatform", "http://localhost:5174");

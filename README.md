@@ -15,7 +15,7 @@ To recreate this project with the same configuration:
 
 ```sh
 # recreate this project
-npx sv@0.15.2 create --template minimal --no-types --add tailwindcss="plugins:none" --install npm jdilearning
+npx sv@0.15.2 create --template minimal --types ts --add tailwindcss="plugins:none" --install npm jdilearning
 ```
 
 ## Developing
