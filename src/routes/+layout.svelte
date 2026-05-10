@@ -2,7 +2,6 @@
 	import './layout.css';
 	import favicon from '$lib/assets/favicon.svg';
 
-
   //  this section sets the origins for communication between
   //  parent (education platform) and iframe (jdilearning)
   //  for localhost (development) and production (Vercel)
