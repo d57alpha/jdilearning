@@ -31,9 +31,15 @@
  />
 
 <h1>JDI Learning</h1>
-<button class="btn btn-soft btn-primary m-1"  onclick={sendmsg1}>Send Message 1 to Parent Education</button>
-<button class="btn btn-soft btn-primary m-1"  onclick={sendmsg2}>Send Message 2 to Parent Education</button>
-
+<div class="flex flex-col">
+  <!--
+  <button class="btn btn-sm btn-soft btn-primary m-1"  onclick={sendmsg1}>msg 1 to parent</button>
+  <button class="btn btn-sm btn-soft btn-primary m-1"  onclick={sendmsg2}>msg 1 to parent</button>
+  -->
+  <button class="btn btn-sm btn-soft btn-primary m-1"  >Dashboard</button>
+  <button class="btn btn-sm btn-soft btn-primary m-1"  >Explain Highlighted text</button>
+  <textarea class="textarea" placeholder="Question?"></textarea>
+</div>
 <!--
 
 // This is for plugin in separate window
